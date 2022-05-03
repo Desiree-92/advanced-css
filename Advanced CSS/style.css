@@ -1,0 +1,99 @@
+.parent-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+  -ms-grid-rows: (auto)[7];
+      grid-template-rows: repeat(7, auto);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px;
+  margin: 10px;
+}
+
+.grid {
+  position: relative;
+}
+
+html {
+  background: #c3cfe2;
+  font-family: 'indie flower', cursive;
+}
+
+header,
+.grid {
+  background: #fff;
+  margin: 50px;
+  border: 20px;
+  border-radius: 30px;
+  -webkit-box-shadow: 4px 4px gray;
+          box-shadow: 4px 4px gray;
+}
+
+h1 {
+  padding: 2.3rem;
+  font-size: 1.5rem;
+  text-align: center;
+  color: #b695e1;
+}
+
+nav {
+  text-align: center;
+}
+
+.desiree {
+  width: 130px;
+  height: 130px;
+  border-radius: 100%;
+  border: 6px solid #fff;
+}
+
+footer {
+  background: #686de0;
+  margin-top: -70px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  color: #fff;
+}
+
+.tekst {
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 20px;
+}
+
+@media screen and (min-width: 320px) {
+  header,
+  .grid {
+    max-width: 470px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .parent-grid {
+    -ms-grid-columns: (auto)[2];
+        grid-template-columns: repeat(2, auto);
+    -ms-grid-rows: (auto)[4];
+        grid-template-rows: repeat(4, auto);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .parent-grid {
+    -ms-grid-columns: (auto)[3];
+        grid-template-columns: repeat(3, auto);
+    -ms-grid-rows: (auto)[3];
+        grid-template-rows: repeat(3, auto);
+  }
+}
+
+@media screen and (min-width: 1740px) {
+  .parent-grid {
+    -ms-grid-columns: (auto)[4];
+        grid-template-columns: repeat(4, auto);
+    -ms-grid-rows: (auto)[2];
+        grid-template-rows: repeat(2, auto);
+  }
+}
+/*# sourceMappingURL=style.css.map */

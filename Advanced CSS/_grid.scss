@@ -1,0 +1,24 @@
+@mixin gridstyle {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(7, auto) ;
+    justify-content: center;
+    
+}
+
+@mixin positie {
+    position: relative;
+}
+
+
+.parent-grid {
+    @include gridstyle();
+    padding: 20px;
+    margin: 10px;
+
+}
+
+.grid {
+   @include positie();
+
+}
